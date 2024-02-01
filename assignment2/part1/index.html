@@ -99,9 +99,7 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
-
+      <img src="firefox_logo-only_RGB-120.png" alt="firefox logo">
     </header>
 
     <main>
@@ -116,37 +114,43 @@
       </article>
 
       <div class="further-info">
-       
-      <img src="firefox_logo-only_RGB.png" alt="Firefox Logo" srcset="firefox_logo-only_RGB_400px.png 400w, firefox_logo-only_RGB_120px 120w"
-        sizes="(max-width: 500px)120px, 400px">
-      <img src="mozilla-dinosaur-head.png" alt="Dinosaur Head" srcset="mozilla-dinosaur-head_400px.png 400w, mozilla-dinosaur-head_120px.png 120w"
-        sizes="(max-width: 500px)120px, 400px">
-      <img src="firefox-addons.jpg" alt="Firefox addons" srcset="firefox-addons_120px_jpg 120w"
-        sizes="(max-width: 500px)120px">
-        <img src="firefox_logo-only_RGB.png" alt="Firefox Logo" srcset="firefox_logo-only_RGB_400px.png 400w, firefox_logo-only_RGB_120px 120w"
-        sizes="(max-width: 500px)120px, 400px">
-
-    
-
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img 
+            srcset="firefox_logo-only_RGB_120_px.png 120w, firefox_logo-only_RGB_400px.png 400w"
+            sizes="(max-width: 500px) 120px, 400px"
+            src="firefox_logo-only_RGB_400px.png" alt="firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img 
+            srcset="mozilla-dinosaur-head_120px.png 120w, mozilla-dinosaur-head_400px.png 400w"
+            sizes="(max-width: 500px) 120px, 400px"
+            src="mozilla-dinosaur-head_400px.png" 
+            alt="dinosaur head">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img 
+            srcset="firefox-addons_120px.jpg 120w, firefox-addons.jpg 400w"
+            sizes="(max-width: 500px) 120px, 400px"
+            src="firefox-addons.jpg" 
+            alt="firefox add-ons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img 
+            src="mdn.svg" 
+            alt="mdn">
         </a>
         <div class="clearfix"></div>
       </div>
-
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source 
+            media="(max-width:600px)" 
+            srcset="red-panda_600px.jpg">
+          <img 
+            src="red-panda.jpg" 
+            alt="red panda">
+        </picture>
       </div>
-
     </main>
   </body>
 </html>
