@@ -9,9 +9,16 @@ div {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 18px;
-  background-color: palevioletred;
+  line-height:10;
+  font-size: 30px;
+  color: rgb(250, 9, 182);
+  text-shadow: 1.5px 1.5px 1px #000;
+  background-color: rgb(110, 8, 95);
+  border: 1px solid rgba(0,0,0,0.4);
   border-radius: 20px;
-  background-image: linear-gradient(to right bottom);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right bottom, );
+  box-shadow:
+  inset 3px 3px 5px rgba(255, 255, 255, 0.6),
+  inset -3px -3px 7px rgba(0, 0, 0, 0.6),
+  3px 4px 6px black;
 }
